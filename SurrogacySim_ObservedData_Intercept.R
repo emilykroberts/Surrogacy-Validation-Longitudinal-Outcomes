@@ -102,6 +102,11 @@ ST = cbind(ST, uitruesamp[,2:3])
 # likelihood calculation for MH step
 fdelt = function(n,R,j){ return(-(n/2)*log(det(R))+(-0.5*j) )}
 
+# initial values
+holdR[1,3,1] = 0.5
+holdR[1,2,1] = 0.1
+holdR[2,3,1] = 0.1
+
 # start simulation
 
 while(sim <= SIM){
