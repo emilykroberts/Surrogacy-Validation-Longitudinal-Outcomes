@@ -9,7 +9,6 @@
 #'
 #' @examples
 #'
-#' set.seed(323);
 #' array_id2 = array_id = 1
 #' sim = 2
 #'
@@ -19,7 +18,7 @@
 #' condindfit = T # fit conditional independence
 #' prior = 'beta' # or unif
 #' misspecify = F
-#' r = 3
+#' r = 3 # number of repeated measures
 #'
 #' # generating values
 #' alpha1 = 2; psi2 = 0
