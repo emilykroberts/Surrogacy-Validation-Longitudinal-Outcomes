@@ -1,4 +1,3 @@
-# R package: hlt <img src="man/figures/logo.png" align="right" width="120" />
 
 ### R code to accompany Surrogacy Validation with Longitudinal Outcomes for a Gene Therapy manuscript
 
@@ -23,7 +22,7 @@ install.packages("devtools")
 
 ### Help/Getting started
 
-Once installed, load the package with 
+Once installed, load the package
 
 ```r
 #library("hlt")
@@ -31,7 +30,7 @@ Once installed, load the package with
 
 #### Details
 
-The R package requires R (version > 3.5.0). Pre-build binaries for the current official release of the package are available from CRAN (Comprehensive R Archive Network), but if the user desires to compile the package for himself, then the typical R compiler tools will have to be installed. Instructions can be found on the R Project’s website at https://www.r-project.org/nosvn/pandoc/devtools.html.
+The R package requires R (version > 3.5.0). Pre-build binaries for the current official release of the package are available from CRAN (Comprehensive R Archive Network), but if the user desires to compile the package for himself, then the typical R compiler tools will have to be installed. Instructions can be found on the R Projects website at https://www.r-project.org/nosvn/pandoc/devtools.html.
 
 The latest development version of the package can be found on Github. 
 
