@@ -3,8 +3,8 @@ Type: Package
 Title: Surrogacy-Validation-Longitudinal-Outcomes
 Version: 0.9.0.9999
 Date: 2022-08-14
-Authors@R: person("Emily", "Roberts", role=c("aut","cre"), email="@gmail.com")
-Maintainer: Emily Roberts <@gmail.com>
+Authors@R: person("Emily", "Roberts", role=c("aut","cre"), email="emily-roberts-1@uiowa.edu")
+Maintainer: Emily Roberts <emly-roberts-1@uiowa.edu>
 Description: Desribe details of package with lit references.
 License: GPL (>= 2)
 Depends: R (>= 3.5.0)
