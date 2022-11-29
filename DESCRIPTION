@@ -1,6 +1,6 @@
 Package: surrogacy
 Type: Package
-Title: Surrogacy
+Title: Surrogacy-Validation-Longitudinal-Outcomes
 Version: 0.9.0.9999
 Date: 2022-08-14
 Authors@R: person("Emily", "Roberts", role=c("aut","cre"), email="@gmail.com")

@@ -17,7 +17,7 @@ install.packages("devtools")
 ```
 
 ```r
-#devtools::install_github("mkleinsa/hlt")
+#devtools::install_github("emilykroberts/Surrogacy-Validation-Longitudinal-Outcomes")
 ```
 
 ### Help/Getting started
@@ -25,27 +25,20 @@ install.packages("devtools")
 Once installed, load the package
 
 ```r
-#library("hlt")
+#library("Surrogacy-Validation-Longitudinal-Outcomes")
 ```
 
 #### Details
 
-The R package requires R (version > 3.5.0). Pre-build binaries for the current official release of the package are available from CRAN (Comprehensive R Archive Network), but if the user desires to compile the package for himself, then the typical R compiler tools will have to be installed. Instructions can be found on the R Projects website at https://www.r-project.org/nosvn/pandoc/devtools.html.
+The R package requires R. Pre-build binaries for the current official release of the package are available from CRAN (Comprehensive R Archive Network), but if the user desires to compile the package for himself, then the typical R compiler tools will have to be installed. Instructions can be found on the R Projects website at https://www.r-project.org/nosvn/pandoc/devtools.html.
 
 The latest development version of the package can be found on Github. 
-
 
 See the README on the Github repository page for additional details about package installation. 
 
 ### Core functionality
 
 
-
-### Illustration of functions with simulated data
-
-
-
-### Simulation Function
 
 
 ### Contributing 
