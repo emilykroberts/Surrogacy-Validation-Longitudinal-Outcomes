@@ -1,15 +1,29 @@
 
 #' Generate data
 #'
-#' @description Generate data ...
+#' @description Generate data for simulations for random intercept model
 #'
 #' @param n number of observations to simulate
+#' @param theta10 correlation between S(1) and T(0)
+#' @param theta11 correlation between S(1) and T(1)
+#' @param thetaT correlation between T(0) and T(1)
+#' @param alpha1 mean of S(1)
+#' @param psi2 effect of X on S(1)
+#' @param beta0 mean of T(0)
+#' @param omega1 effect of X on T(0)
+#' @param beta1 mean of T(1)
+#' @param omega2 effect of X on T(1)
+#' @param eps1 standard deviation of S(1)
+#' @param eps2 standard deviation of b0
+#' @param eps3 standard deviation of b1
+#' @param sigmae standard deviation of residual error
+#' @param misspecify logical value if mvn model is misspecified
+#' @param number of repeated measures
 #'
-#' @return a list of samples
+#' @return dataset
 #'
 #' @examples
 #'
-#' set.seed(323);
 #' array_id2 = array_id = 1
 #' sim = 2
 #'
@@ -25,25 +39,22 @@
 #' alpha1 = 2; psi2 = 0
 #' beta0 = 2; omega1 = 0
 #' beta1 = 3.1; omega2 = 0
-#' eps1 = 0.5; eps2 = 0.5; eps3 = 0.5; tau4 = 0.5; eta4 = 1
+#' eps1 = 0.5; eps2 = 0.5; eps3 = 0.5
 #' theta10 = 0.15; theta11 = 0.7; thetaT = 0.2142857
 #' sigmae = 0.3; tau = sigmae^2 # represents ei
 #'
-#'ST = generate_data(n, theta10 = theta10, theta11 = theta11, thetaT = thetaT,
+#' example(generate_data(n, theta10 = theta10, theta11 = theta11, thetaT = thetaT,
 #'  alpha1 = alpha1, psi2 = psi2,
 #'  beta0 = beta0, omega1 = omega1,
 #'  beta1 = beta1, omega2 = omega2,
-#'  eps1 = eps1, eps2 = eps2, eps3 = eps3, tau4 = tau4, eta4 = eta4,
+#'  eps1 = eps1, eps2 = eps2, eps3 = eps3,
 #'  sigmae = 0.3,
-#'  misspecify = misspecify, r = r)
-#'
-#' samp = ST[[1]]
-#' uitrue = ST[[2]]
+#'  misspecify = misspecify, r = r))
 #'
 generate_data = function(n, theta10, theta11, thetaT, alpha1, psi2,
                          beta0, omega1,
                          beta1, omega2,
-                         eps1, eps2, eps3, tau4, eta4,
+                         eps1, eps2, eps3, 
                          sigmae, misspecify, r){
 
   tau = sigmae^2

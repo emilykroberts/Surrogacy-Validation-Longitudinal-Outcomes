@@ -26,6 +26,7 @@ Once installed, load the package
 
 ```r
 #library("Surrogacy-Validation-Longitudinal-Outcomes")
+library("surrogacy")
 ```
 
 #### Details
@@ -38,7 +39,7 @@ See the README on the Github repository page for additional details about packag
 
 ### Core functionality
 
-
+Assess surrogacy value of a surrogate for longitudinal true outcomes when surrogate and true outcomes are normally distributed. Currently uses random intercept models.
 
 
 ### Contributing 
