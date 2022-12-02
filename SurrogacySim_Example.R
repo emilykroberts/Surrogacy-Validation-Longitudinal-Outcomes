@@ -95,14 +95,14 @@ for(i in 1:n){
 ST = cbind(ST, rep(0, n), rep(0, n))
 
 # initial values
-holdR[1,3,1] = r13init = 0.5
-holdR[1,2,1] = r12init = 0.1
-holdR[2,3,1] = r23init = 0.1
+r13init = 0.5
+r12init = 0.1
+r23init = 0.1
 
 # start simulation
 
-run_mcmc(samp = ST, Xi = 0, n = n, SIM = SIM, r = r, condindfit = condindfit,
+run_mcmc(samp = ST, Xi = rep(0,n), n = n, SIM = SIM, r = r, condindfit = condindfit,
                     prior = prior, r13init = r13init, r12init = r12init, r23init = r23init,
-                    b0init = 0, b1init = 0)
+                    b0init = rep(0, n/2), b1init = rep(0, n/2))
   
   
