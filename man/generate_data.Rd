@@ -18,8 +18,6 @@ generate_data(
   eps1,
   eps2,
   eps3,
-  tau4,
-  eta4,
   sigmae,
   misspecify,
   r
@@ -27,44 +25,50 @@ generate_data(
 }
 \arguments{
 \item{n}{number of observations to simulate}
+
+\item{theta10}{correlation between S(1) and T(0)}
+
+\item{theta11}{correlation between S(1) and T(1)}
+
+\item{thetaT}{correlation between T(0) and T(1)}
+
+\item{alpha1}{mean of S(1)}
+
+\item{psi2}{effect of X on S(1)}
+
+\item{beta0}{mean of T(0)}
+
+\item{omega1}{effect of X on T(0)}
+
+\item{beta1}{mean of T(1)}
+
+\item{omega2}{effect of X on T(1)}
+
+\item{eps1}{standard deviation of S(1)}
+
+\item{eps2}{standard deviation of b0}
+
+\item{eps3}{standard deviation of b1}
+
+\item{sigmae}{standard deviation of residual error}
+
+\item{misspecify}{logical value if mvn model is misspecified}
+
+\item{number}{of repeated measures}
 }
 \value{
-a list of samples
+dataset
 }
 \description{
-Generate data ...
+Generate data for simulations for random intercept model
 }
 \examples{
-
-set.seed(323);
-array_id2 = array_id = 1
-sim = 2
-
-# simulation parameters
-n = 300; SIM = 1000 # burnin, sample size, and number of MCMC iterations
-accept = 0 # counter for acceptance ratio
-condindfit = T # fit conditional independence
-prior = 'beta' # or unif
-misspecify = F
-r = 3
-
-# generating values
-alpha1 = 2; psi2 = 0
-beta0 = 2; omega1 = 0
-beta1 = 3.1; omega2 = 0
-eps1 = 0.5; eps2 = 0.5; eps3 = 0.5; tau4 = 0.5; eta4 = 1
-theta10 = 0.15; theta11 = 0.7; thetaT = 0.2142857
-sigmae = 0.3; tau = sigmae^2 # represents ei
-
-ST = generate_data(n, theta10 = theta10, theta11 = theta11, thetaT = thetaT,
- alpha1 = alpha1, psi2 = psi2,
- beta0 = beta0, omega1 = omega1,
- beta1 = beta1, omega2 = omega2,
- eps1 = eps1, eps2 = eps2, eps3 = eps3, tau4 = tau4, eta4 = eta4,
+example(generate_data(n = 100, theta10 = 0.1, theta11 = 0.3, thetaT = 0.7,
+ alpha1 = 1, psi2 = 1,
+ beta0 = 2, omega1 = 3,
+ beta1 = 1, omega2 = 3,
+ eps1 = 1, eps2 = 1, eps3 = 1,
  sigmae = 0.3,
- misspecify = misspecify, r = r)
-
-samp = ST[[1]]
-uitrue = ST[[2]]
+ misspecify = FALSE, r = 2))
 
 }

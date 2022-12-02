@@ -23,33 +23,13 @@
 #' @return dataset
 #'
 #' @examples
-#'
-#' array_id2 = array_id = 1
-#' sim = 2
-#'
-#' # simulation parameters
-#' n = 300; SIM = 1000 # burnin, sample size, and number of MCMC iterations
-#' accept = 0 # counter for acceptance ratio
-#' condindfit = T # fit conditional independence
-#' prior = 'beta' # or unif
-#' misspecify = F
-#' r = 3
-#'
-#' # generating values
-#' alpha1 = 2; psi2 = 0
-#' beta0 = 2; omega1 = 0
-#' beta1 = 3.1; omega2 = 0
-#' eps1 = 0.5; eps2 = 0.5; eps3 = 0.5
-#' theta10 = 0.15; theta11 = 0.7; thetaT = 0.2142857
-#' sigmae = 0.3; tau = sigmae^2 # represents ei
-#'
-#' example(generate_data(n, theta10 = theta10, theta11 = theta11, thetaT = thetaT,
-#'  alpha1 = alpha1, psi2 = psi2,
-#'  beta0 = beta0, omega1 = omega1,
-#'  beta1 = beta1, omega2 = omega2,
-#'  eps1 = eps1, eps2 = eps2, eps3 = eps3,
+#' example(generate_data(n = 100, theta10 = 0.1, theta11 = 0.3, thetaT = 0.7,
+#'  alpha1 = 1, psi2 = 1,
+#'  beta0 = 2, omega1 = 3,
+#'  beta1 = 1, omega2 = 3,
+#'  eps1 = 1, eps2 = 1, eps3 = 1,
 #'  sigmae = 0.3,
-#'  misspecify = misspecify, r = r))
+#'  misspecify = FALSE, r = 2))
 #'
 generate_data = function(n, theta10, theta11, thetaT, alpha1, psi2,
                          beta0, omega1,
